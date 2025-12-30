@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang=en><meta charset=UTF-8><title>The Prototype Chapter Visualizer</title><link rel=stylesheet href=/prototype-v/Visualizer_Prototype.7d57aaf4.css><link rel=stylesheet href=/prototype-v/Visualizer_Prototype.49258991.css><body>
+    <h1>The Prototype Chapter Visualizer</h1>
+    <div class=controls-container>
+      <p>Select a chapter to begin the visualization:</p>
+      <div id=scenario-buttons>
+        <button data-scenario=part1>Part 1: The Foundation</button>
+        <button data-scenario=part2>Part 2: Constructors &amp; `new`</button>
+        <button data-scenario=part3>Part 3: Prototypal Inheritance</button>
+        <button data-scenario=part4>Part 4: The `class` Syntax</button>
+      </div>
+    </div>
+
+    <div class=app-wrapper>
+      <div class=box id=code-box>
+        <h2>Code Execution</h2>
+        <div id=line-highlighter></div>
+        <pre><code id=code-block class=language-js></code></pre>
+      </div>
+
+      <div class=box id=objects-box>
+        <h2>Live Object Model</h2>
+        <div id=instances-container class=container>
+          <div class=container-title>Instances</div>
+        </div>
+        <hr>
+        <div id=prototypes-container class=container>
+          <div class=container-title>Prototypes</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box narrator-box" id=narrator-box>
+      <h2 id=narrator-header>
+        Narrator <span style=font-size:xx-small>(Drag Elsewhere)</span>
+      </h2>
+      <div id=narrator-content>Select a chapter to begin...</div>
+      <div id=narrator-resize-handle></div>
+    </div>
+
+    <div class=box id=output-box>
+      <h2>DevTools Console</h2>
+      <div id=output-container class=container></div>
+    </div>
+
+    <svg id=svg-layer />
+
+    <script type=module src=/prototype-v/Visualizer_Prototype.c2aa7ada.js></script>
+  
+
